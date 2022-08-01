@@ -7,7 +7,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import queryString from 'query-string';
 
-import { isEmptyObject, isIE9, isUndefinedOrNull } from '../shared/utils';
+import { isEmptyObject, isIE9, isUndefinedOrNull } from '../shared/util';
 import { REQUEST_TIMEOUT, CANCEL_HTTP_REQUEST } from '../shared/constants';
 import { HttpTypeEnum, HttpResponseTypeEnum, HttpContentTypeEnum, HttpMethodEnum } from '../shared/enums';
 import { IHttpHandler, ITokenHandler, ILoadingHandler, IResponseHandler, IRequestHandler } from '../shared/interfaces';

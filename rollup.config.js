@@ -31,7 +31,7 @@ const formatConfig = {
 
 // 基础配置信息
 const baseConfigs = [
-  { format: 'umd', name: 'http' },
+  { format: 'umd', name: 'Http' },
   { format: 'es' },
   { format: 'es', browser: true },
   { format: 'cjs' },
