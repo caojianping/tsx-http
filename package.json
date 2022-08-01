@@ -1,0 +1,44 @@
+{
+  "name": "jts-http",
+  "version": "1.0.0",
+  "description": "http请求响应方法库，基于axios、fetch等实现，同时暴露ITokenHandler、ILoadingHandler、IResponseHandler接口实现定制化需求",
+  "main": "dist/index.common.min.js",
+  "module": "dist/index.esm.min.js",
+  "unpkg": "dist/index.umd.min.js",
+  "jsdelivr": "dist/index.umd.min.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "examples"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "axios",
+    "fetch",
+    "http",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "author": "caojianping",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@types/axios": "^0.14.0",
+    "@types/query-string": "^6.3.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "rollup": "^2.58.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.3"
+  }
+}
