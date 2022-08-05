@@ -6,8 +6,7 @@
 
 import { HttpInstanceTypeEnum } from '../enums';
 import { IHttpHandler, ILoadingHandler, IResponseHandler, ITokenHandler, IRequestHandler } from '../interfaces';
-import { Caxios } from '../../caxios';
-import { Cfetch } from '../../cfetch';
+import { AxiosService, FetchService } from '../services';
 
 /**
  * http工厂类
@@ -51,7 +50,7 @@ export class HttpFactory {
     let result: IHttpHandler;
     switch (instanceType) {
       case HttpInstanceTypeEnum.Axios:
-        result = new Caxios(
+        result = new AxiosService(
           this.commonOptions,
           this.requestHandler,
           this.responseHandler,
@@ -60,7 +59,7 @@ export class HttpFactory {
         );
         break;
       case HttpInstanceTypeEnum.Fetch:
-        result = new Cfetch(
+        result = new FetchService(
           this.commonOptions,
           this.requestHandler,
           this.responseHandler,
@@ -69,7 +68,7 @@ export class HttpFactory {
         );
         break;
       case HttpInstanceTypeEnum.Ajax:
-        result = new Caxios(this.commonOptions);
+        result = new AxiosService(this.commonOptions);
         break;
     }
     return result;

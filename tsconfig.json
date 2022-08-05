@@ -8,7 +8,6 @@
     "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
-    "noUnusedLocals": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -16,8 +15,8 @@
     "declaration": true,
     "declarationMap": false,
     "declarationDir": "types",
-    "lib": ["esnext", "dom"],
-    "types": ["node"]
+    "lib": ["esnext", "DOM"],
+    "types": []
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

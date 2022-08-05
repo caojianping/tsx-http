@@ -4,13 +4,13 @@
  * @Date: 2021-06-04 16:38:11
  */
 
-import { HttpTypeEnum } from '../shared/enums';
-import { IHttpHandler, ITokenHandler, ILoadingHandler, IResponseHandler, IRequestHandler } from '../shared/interfaces';
+import { HttpTypeEnum } from '../enums';
+import { IHttpHandler, ITokenHandler, ILoadingHandler, IResponseHandler, IRequestHandler } from '../interfaces';
 
 /**
  * fetch封装类
  */
-export class Cfetch implements IHttpHandler {
+export class FetchService implements IHttpHandler {
   // 通用选项
   private commonOptions!: any;
 

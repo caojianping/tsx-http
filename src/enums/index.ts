@@ -8,19 +8,31 @@
  * 【HTTP】实例类型枚举
  */
 export enum HttpInstanceTypeEnum {
-  Axios = 0, // 基于axios实现
-  Fetch = 1, // 基于fetch实现
-  Ajax = 2, // 基于jquery ajax实现
+  // 基于axios实现
+  Axios = 0,
+
+  // 基于fetch实现
+  Fetch = 1,
+
+  // 基于jquery ajax实现
+  Ajax = 2,
 }
 
 /**
  * 【HTTP】类型枚举
  */
 export enum HttpTypeEnum {
-  Default = 0, // 默认
-  Token = 1, // token
-  Loading = 2, // 加载
-  TokenLoading = 3, // token&&加载
+  // 默认
+  Default = 0,
+
+  // token
+  Token = 1,
+
+  // 加载
+  Loading = 2,
+
+  // token&&加载
+  TokenLoading = 3,
 }
 
 /**

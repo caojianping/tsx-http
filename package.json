@@ -1,5 +1,5 @@
 {
-  "name": "jts-http",
+  "name": "tsx-http",
   "version": "1.0.0",
   "description": "http请求响应方法库，基于axios、fetch等实现，同时暴露ITokenHandler、ILoadingHandler、IResponseHandler接口实现定制化需求",
   "main": "dist/index.common.min.js",

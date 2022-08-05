@@ -7,10 +7,10 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import queryString from 'query-string';
 
-import { isEmptyObject, isIE9, isUndefinedOrNull } from '../shared/util';
-import { REQUEST_TIMEOUT, CANCEL_HTTP_REQUEST } from '../shared/constants';
-import { HttpTypeEnum, HttpResponseTypeEnum, HttpContentTypeEnum, HttpMethodEnum } from '../shared/enums';
-import { IHttpHandler, ITokenHandler, ILoadingHandler, IResponseHandler, IRequestHandler } from '../shared/interfaces';
+import { isEmptyObject, isIE9, isUndefinedOrNull } from '../utils';
+import { REQUEST_TIMEOUT, CANCEL_HTTP_REQUEST } from '../constants';
+import { HttpTypeEnum, HttpResponseTypeEnum, HttpContentTypeEnum, HttpMethodEnum } from '../enums';
+import { IHttpHandler, ITokenHandler, ILoadingHandler, IResponseHandler, IRequestHandler } from '../interfaces';
 
 (window as any)[CANCEL_HTTP_REQUEST] = null;
 
@@ -23,7 +23,7 @@ const defaultOptions = {
 /**
  * axios封装类
  */
-export class Caxios implements IHttpHandler {
+export class AxiosService implements IHttpHandler {
   // 通用选项
   private commonOptions!: any;
 

@@ -14,9 +14,7 @@ export const isIE9 = (): boolean => {
   const appVersion = wnavigator.appVersion || '';
 
   let version = appVersion.split(';')[1];
-  if (!version) {
-    return false;
-  }
+  if (!version) return false;
 
   version = version.replace(/[ ]/g, '').replace('MSIE', '');
   return appName == 'Microsoft Internet Explorer' && parseInt(version) <= 9;
